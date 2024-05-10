@@ -1,0 +1,19 @@
+/* assets/css/custom-tailwind.css */
+/* This file is mounted to the project in the nuxt.config.ts file  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Use rgb colors with three numbers. The names here should be assigned to tailwind classes in tailwind.config.js */
+@layer base {
+    :root {
+        --color-text-base: 255, 180, 20;
+        --color-text-muted: 110, 100, 20;
+        --color-bg: 255, 255, 20;
+    }
+    .theme-swiss {
+        --color-text-base: 20, 0, 0;
+        --color-text-muted: 145, 110, 20;
+        --color-bg: 255, 255, 200;
+    }
+}
